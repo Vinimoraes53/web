@@ -1,0 +1,19 @@
+/*Define o container como um grid*/
+.grid-container{
+    display: grid;
+    /*Cria 4 colunas de largura igual*/
+    grid-template-columns: repeat(4,1fr);
+    /*Espaçamento de 10px entre as células*/
+    gap: 10px;
+    margin: 20px
+}
+/*Cada grid contém uma imagem*/
+.grid-item{
+    overflow: hidden; /*Garante que a imagem não ultrapasse o limite da célula*/
+}
+.grid-item img{
+    width: 100%; /*A imagem ocupa toda a largura da célula*/
+    height: auto; /*A altura é ajustada automaticamente*/
+    display: block; /*Remove o espaço em branco abaixo da imagem*/
+    border: 2px solid #f85985; /*Borda branca de 2px*/
+}

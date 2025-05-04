@@ -1,0 +1,23 @@
+/*Define o container como grid 4 colunas*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /*4 colunas de mesma largura*/
+    gap: 10px; /*Espaçamento entre os itens*/
+    margin: 20px; /*Margem externa*/
+}
+
+/*Estilização básica para os itens*/
+.grid-item {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Este item ocupar 2 colunas e 2 linhas*/
+
+.item-span {
+    grid-column: span 2; /*Ocupa 2 colunas*/
+    grid-row: span 2; /*Ocupa 2 linhas*/
+}

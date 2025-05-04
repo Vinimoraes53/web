@@ -1,0 +1,19 @@
+.grid-container {
+   display: grid; /* Ativa o grid */
+   grid-template-columns: repeat(3,1fr); /* Cria 3 colunas com largura igual */
+   grid-template-rows: repeat(2,100px); /* Cria 2 linhas com altura de 100px */
+    gap: 10px; /* Adiciona espaçamento entre os elementos */
+    margin: 20px 10px; /* Adiciona margem ao grid */
+    background-color: aqua; /* Adiciona cor de fundo ao grid */
+    color: #fff; /* Adiciona cor de texto ao grid */
+}
+
+.grid-item{
+    background-color: aqua; /* Adiciona cor de fundo ao grid */
+    color: #fff; /* Adiciona cor de texto ao grid */
+    font-size: 20px; /* Define o tamanho da fonte */
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Alinha o conteúdo ao centro */
+    justify-content: center; /* Alinha o conteúdo ao centro */
+}
+    

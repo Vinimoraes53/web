@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body { /* Definindo o corpo da página */
+    display: flex; /* Tornando o corpo um flex container */
+    justify-content: center; /* Centralizando o conteúdo horizontalmente */
+    align-items: center; /* Centralizando o conteúdo verticalmente */
+    height: 100vh; /* Definindo a altura da página */
+    margin: 0; /* Removendo as margens padrão */
+    background-color: #f0f0f0; /* Definindo a cor de fundo */
+}
+
+.container { /* Definindo o estilo da caixa */
+    background-color: #ffffff; /* Definindo a cor de fundo */
+    padding: 20px; /* Adicionando um espaçamento interno */
+    width: 300px; /* Definindo a largura */
+    border-radius: 15px;   /* Adicionando bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra */ 
+    text-align: center; /* Centralizando o texto */
+}
+
+h1 { /* Definindo o estilo do título */
+    font-size: 24px; /* Definindo o tamanho da fonte */
+    margin-bottom: 10px; /* Adicionando um espaçamento inferior */
+}
+
+p { /* Definindo o estilo do parágrafo */
+    font-size: 16px; /* Definindo o tamanho da fonte */
+    margin-bottom: 20px; /* Adicionando um espaçamento inferior */
+}
+
+button { /* Definindo o estilo do botão */
+    padding: 10px 20px; /* Adicionando um espaçamento interno */
+    font-size: 16px; /* Definindo o tamanho da fonte */
+    color: #ffffff; /* Definindo a cor do texto */
+    background-color: #007bff; /* Definindo a cor de fundo */
+    border: none;  /* Removendo a borda */
+    border-radius: 5px; /* Adicionando bordas arredondadas */
+    cursor: pointer; /* Alterando o cursor ao passar o mouse */
+}
+
+button:hover { /* Alterando o estilo ao passar o mouse */
+    background-color: #0056b3; /* Alterando a cor de fundo ao passar o mouse */
+}
+/* Definindo a animação de piscar com cores */
+@keyframes piscarCores { 
+    0% { color: red; } /* Definindo a cor inicial */
+    25% { color: blue; } /* Definindo a cor aos 25% da animação */
+    50% { color: green; } /* Definindo a cor aos 50% da animação */
+    75% { color: orange; } /* Definindo a cor aos 75% da animação */
+    100% { color: red; } /* Definindo a cor final */
+}
+
+/* Aplicando a animação ao texto */
+.texto-piscando { /* Definindo o estilo do texto */
+    font-size: 2em; /* Definindo o tamanho da fonte */
+    animation: piscarCores 1s infinite; /* Adicionando a animação */
+}
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- Adicionando a caixa -->
+        <h1 class="texto-piscando">Bem-vindo</h1> <!-- Adicionando o título -->
+        <p>Esta é uma caixa centralizada com bordas arredondadas.</p> <!-- Adicionando o parágrafo -->
+        <button>Clique aqui</button> <!-- Adicionando o botão -->
+    </div>   
+</body>
+</html>

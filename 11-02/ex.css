@@ -1,0 +1,41 @@
+.centralizado {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Alinha o conteúdo ao centro */
+    align-items: center;    /* Alinha o conteúdo ao centro */
+    flex-direction: column;   /* Alinha o conteúdo ao centro */
+    min-height: 100vh;   /* Altura mínima da tela */
+    text-align: center; /*Para alinhar o texto ao centro */
+    padding: 10px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Adiciona a borda ao tamanho total do elemento */
+}
+
+/* Estilo do título */
+table {
+    margin: 20px 0; /* Margem para a tabela */
+    width: 50%; /* Para que a tabela ocupe a largura total do container */
+    max-width: 600px; /* Limite máximo de largura para a tabela */
+    box-sizing: border-box;
+    border-collapse: collapse; /* Remove espaçamentos entre células da tabela */
+    border: 5px double #d01313; /* Adiciona bordas duplas à tabela */
+}
+
+td, th {
+    padding: 10px; /* Adiciona espaçamento interno nas células */
+    border: 5px double #17ba4b; /* Adiciona bordas duplas às células */
+    text-align: center; /* Centraliza o texto dentro das células */
+}
+
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Garante que a imagem se ajuste ao tamanho da tela */
+    margin: 20px 0; /* Adiciona margem à imagem */
+    border: 5px double #a30e0e; /* Adiciona bordas duplas à imagem */
+    display: block; /* Remove espaçamentos verticais */
+    margin-left: auto;      /* Para alinhar a imagem ao centro */
+    margin-right: auto;   /* Para alinhar a imagem ao centro */ 
+    }
+ul{
+    text-align: left; /*Para alinhar o texto ao centro */
+    padding: 0; /* Remove espaçamento interno */
+    list-style: none; /* Remove marcadores da lista */
+}

@@ -1,0 +1,48 @@
+/*Define o container como grid*/
+.grid-container{
+    display: grid;
+    /*Define o grid com 3 colunas com larguras proporcionais*/
+    grid-template-columns: 1fr 2fr 1fr;
+    /*Define 3 linhas com alturas específicas*/
+    grid-template-rows: 80px 200px 80px;
+    /*Nomeia as áreas do grid*/
+    grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+    gap: 10px;
+    margin: 20px;
+}
+/*Estilização para cada área do grid*/
+.header{
+    grid-area: header;
+    background-color: #ff5722;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #009688;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Content{
+    grid-area: content;
+    background-color: #607d8b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    grid-area: footer;
+    background-color: #795548;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,31 @@
+
+body{ /* Para que o menu fixo não fique por cima do conteúdo */
+height: 2000px;  /* Altura do conteúdo */
+padding: 90px;  /* Altura do menu */
+
+}
+
+#menu{  /* Menu fixo */
+    position: fixed;  /* Fixa o menu no topo da página */
+    top: 0; /* Distância do topo */ 
+    left: 0;
+    width: 100%; /* Largura do menu */
+    height: 90px; /* Altura do menu */
+    background-color:#333; /* Cor de fundo do menu */
+}
+
+ul{ /*estilização da lista*/
+    list-style: none; /* Remove a bolinha da lista */
+    display: flex; /* Faz com que os itens da lista fiquem em linha */
+    align-items:center; /* Centraliza os itens verticalmente */
+    height: 100%; /* Altura do menu */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+li{ /* Estilização dos itens da lista */
+    margin-right: 10px; /* Espaçamento entre os itens */
+}
+
+a{ /* Estilização dos links */
+    color: #fff; /* Cor do texto */
+}
